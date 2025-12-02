@@ -19,7 +19,7 @@ def permutations(str):
     # for each permutation string returned insert the last letter at every position possible
     letter = str[-1]
     for perm_str in perm_list:
-        for i in range(len(perm_str) + 1):
+         for i in range(len(perm_str) + 1):
             # insert letter at position i
             new_str = perm_str[:i] + letter + perm_str[i:]
             new_list.append(new_str)
